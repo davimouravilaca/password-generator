@@ -21,10 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
             contentType: false,
 
             success: function (data) {
-                console.log(data);
                 // Exiba a senha gerada no modal
                 document.getElementById('generatedPasswordText').textContent = data;
-                document.getElementById('passwordTextareaContainer').innerHTML = '<textarea readonly>' + data + '</textarea';
+                //document.getElementById('passwordTextareaContainer').innerHTML = '<hidden textarea readonly>' + data + '</textarea>';
 
                 // Abra o modal
                 const myModal = new bootstrap.Modal(document.getElementById('passwordModal'));
