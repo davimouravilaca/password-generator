@@ -24,9 +24,9 @@
                 </div>
                 <div class="form-check form-check-inline">
                     <label class="form-check-label" for="InlcudeSymbols">
-                        Include symbols
+                    Include symbols
                     </label>
-                    <input class="form-check-input" type="checkbox" value="" id="InlcudeSymbols">
+                    <input class="form-check-input" type="checkbox" value="" id="IncludeSymbols">
                 </div>
                 <button type="button" class="btn btn-primary" id="generatePasswordButton">Generate Password</button>
             </form>
@@ -52,10 +52,10 @@
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+2gDzBz6KA2eL9Ag5Hl5AcE7m6c/y5Z2P/gqZ6F5I5f5ecow5" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="/password-generator/public/js/javascript.js"></script>
+    <script src="javascript.js"></script>
 </body>
 </html>
