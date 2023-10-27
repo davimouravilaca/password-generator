@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Adicione o <textarea> ao contêiner dentro do modal
         const passwordTextareaContainer = document.getElementById("passwordTextareaContainer");
-        passwordTextareaContainer.innerHTML = ''; // Limpe o conteúdo anterior, se houver
         passwordTextareaContainer.appendChild(textarea);
         
         // Selecione e copie o conteúdo do <textarea>
@@ -80,4 +79,21 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('IncludeNumbers').disabled = false;
         }
         }
-            
+        
+        document.getElementById('showHidePasswordButton').addEventListener('click', function() {
+            showHidePassword();
+        });
+    
+        function showHidePassword() {
+            var generatedPasswordText = document.getElementById("generatedPasswordText");
+            var revealButton = document.getElementById("revealButton");
+        
+            if (generatedPasswordText.type === "password") {
+                generatedPasswordText.type = "text";  // Mostrar a senha como texto
+                revealButton.innerHTML = "<img src='img/hide.png' alt='Hide'>";
+            } else {
+                generatedPasswordText.type = "password";  // Ocultar a senha com asteriscos
+                revealButton.innerHTML = "<img src='img/view.png' alt='Reveal'>";
+            }
+        }
+        

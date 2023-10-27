@@ -41,12 +41,14 @@
                     <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
                 </div>
                 <div class='modal-body'>
-                    <!-- Aqui você pode adicionar o conteúdo do password gerado -->
-                    <p id='generatedPasswordText'></p>
+                    <!--Isso é o que será exibido-->
+                    <input class="form-control" type="password" id="generatedPasswordText" value="sua senha aqui" readonly>
+                    <!--senha será copiada disso aqui:-->
                     <div id='passwordTextareaContainer'></div>
                 </div>
                 <div class='modal-footer'>
                     <button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Close</button>
+                    <button type="button" onclick="showHidePassword()" class='btn btn-primary' id="revealButton"><img src="img\view.png" alt='Reveal'></button>
                     <button type='button' class='btn btn-primary' id='copyPasswordButton'><img src='img\copy.png' alt='Copy'></button>
                 </div>
             </div>
