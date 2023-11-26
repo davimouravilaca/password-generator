@@ -23,6 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
             success: function (data) {
                 // Exiba a senha gerada no modal
                 document.getElementById('generatedPasswordText').textContent = data;
+                var senhaProblematica = document.querySelector(".senha-problematica");
+                senhaProblematica.value = data;
                 //document.getElementById('passwordTextareaContainer').innerHTML = '<hidden textarea readonly>' + data + '</textarea>';
 
                 // Abra o modal
@@ -85,15 +87,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     
         function showHidePassword() {
-            var generatedPasswordText = document.getElementById("generatedPasswordText");
+            var generatedPasswordText = document.getElementById('generatedPasswordText');
             var revealButton = document.getElementById("revealButton");
         
             if (generatedPasswordText.type === "password") {
-                generatedPasswordText.type = "text";  // Mostrar a senha como texto
+                generatedPasswordText.type = "text";
                 revealButton.innerHTML = "<img src='img/hide.png' alt='Hide'>";
             } else {
-                generatedPasswordText.type = "password";  // Ocultar a senha com asteriscos
+                generatedPasswordText.type = "password";
                 revealButton.innerHTML = "<img src='img/view.png' alt='Reveal'>";
             }
         }
-        
+
+
