@@ -3,8 +3,9 @@ $PasswordLength = $_POST['PasswordLength'];
 $IncludeNumbers = $_POST['IncludeNumbers'];
 $IncludeSymbols = $_POST['IncludeSymbols'];
 
-$caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-$numbers = "0123456789";
+$letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+$numbers = "01234567890123456789";
+$symbols = "!\"#$%&'()*+,-./[\]^_`{|}~";
 
 switch ($PasswordLength) {
     case 1:
@@ -24,15 +25,16 @@ switch ($PasswordLength) {
         break;
 }
 
-if ($IncludeNumbers == true) {
+if ($PasswordLength != 4) {
+$caracteres = $letras;
+    if ($IncludeNumbers == 'true'){
     $caracteres .= $numbers;
+    }
+    if ($IncludeSymbols == 'true'){
+    $caracteres .= $symbols;
+    }
 }
-
-if ($IncludeSymbols == true) {
-    $caracteres .= "!@#$%^&*()_+-={}[]|\\:;\"'<>,.?/~`";
-}
-
-if ($PasswordLength == 4){
+else {
     $caracteres = $numbers;
 }
 
