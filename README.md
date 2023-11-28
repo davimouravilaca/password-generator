@@ -1,5 +1,5 @@
 <h1 align="center">
-    <a href="passwordgenerator.000.pe/">🔗 Password Generator</a>
+    <a href="http://passwordgenerator.000.pe/">🔗 Password Generator</a>
 </h1>
 <p align="center"> Online Open-Source password generator with responsive UI  </p>
 
