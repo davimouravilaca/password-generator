@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Realize uma chamada AJAX para o PHP
         $.ajax({
             method: 'POST',
-            url: 'http://localhost/password-generator/public/passwordgeneration.php', // Substitua com o caminho correto para o seu arquivo PHP
+            url: 'passwordgeneration.php', // Substitua com o caminho correto para o seu arquivo PHP
             data: dados,
             processData: false,
             contentType: false,
